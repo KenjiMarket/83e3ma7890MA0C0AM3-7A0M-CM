@@ -285,6 +285,7 @@
         .executor-showcase img {
             width: 100%;
             display: block;
+            height: auto;
         }
 
         .download-section {
@@ -292,8 +293,8 @@
             text-align: center;
         }
         
-        /* Your custom download button */
-        .input.popsok {
+        /* Download button */
+        .download-btn {
             display: inline-block;
             padding: 15px 40px;
             background: var(--primary);
@@ -309,7 +310,7 @@
             margin: 10px 0;
         }
         
-        .input.popsok:hover {
+        .download-btn:hover {
             background: var(--primary-dark);
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(231, 76, 60, 0.6);
@@ -353,14 +354,12 @@
         <div class="container">
             <h2 style="font-size: 36px; margin-bottom: 20px;">Ruby <span class="glow">Executor</span> Preview</h2>
             <div class="executor-showcase">
-                <!-- Replace with your actual executor image -->
-                <img src="images/ruby_executor.png" alt="exec preveiw"
+                <!-- Your actual executor image -->
+                <img src="images/ruby_executor.png" alt="Ruby Executor Preview">
             </div>
             
-            <!-- Your custom download button integrated -->
-            <a class="input popsok" aria-label="Download file" 
-               href="https://download1334.mediafire.com/g1k0gsq5ugrg1deAv-My83r7j8CiHYwx3odZLzbrGg-VzePAF6aDA8cqZcdwRisQGFoUf-hNhVw4JVln3LqikZ5HHNO8X64LkywNS6b-UT2gA3_U6RV3e9xOBZKAqhyPN3N-5E3_THxftxSt9GfuMogUzsdo87ZMW26OU2EHsg6C/3ko5e6mcgnojw64/RubyExec.zip" 
-               id="downloadButton" rel="nofollow">
+            <!-- Direct download button -->
+            <a href="exec/rubyexec.zip" class="download-btn" download="rubyexec.zip">
                 <i class="fas fa-download"></i> Download Ruby Executor (4.42MB)
             </a>
             
